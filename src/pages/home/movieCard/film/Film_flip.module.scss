@@ -1,0 +1,84 @@
+// .flip_box {
+//     background-color: transparent;
+//     width: 300px;
+//     height: 200px;
+//     border: 1px solid #f1f1f1;
+//     perspective: 1000px;
+//   }
+  
+//   .flip_box_inner {
+//     position: relative;
+//     width: 100%;
+//     height: 100%;
+//     text-align: center;
+//     transition: transform 0.8s;
+//     transform-style: preserve-3d;
+//   }
+  
+//   .flip_box:hover .flip_box_inner {
+//     transform: rotateY(180deg);
+//     display: block;
+//   }
+  
+//   .flip_box_front, .flip_box_back {
+//     position: absolute;
+//     width: 100%;
+//     height: 100%;
+//     -webkit-backface-visibility: hidden;
+//     backface-visibility: hidden;
+//   }
+  
+//   .flip_box_front {
+//     background-color: #bbb;
+//     color: black;
+//   }
+  
+//   .flip_box_back {
+//     background-color: #555;
+//     color: white;
+//     transform: rotateY(180deg);
+//   }
+
+
+
+
+.flip_card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin-bottom: 60px;
+}
+
+.flip_card_inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip_card:hover .flip_card_inner {
+  transform: rotateY(180deg);
+}
+
+.flip_card_front, .flip_card_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip_card_front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip_card_back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
