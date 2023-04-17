@@ -7,7 +7,8 @@ import Profile from "../pages/profile/Profile";
 import Phim from "../template/templateAdmin/phim/Phim";
 import AddNew from "../template/templateAdmin/phim/AddNew";
 import Edit from "../template/templateAdmin/phim/Edit";
-import ShowTime from "../components/showTime/ShowTime";
+import ShowTime from "../template/templateAdmin/showTime/ShowTime";
+
 
 
 
@@ -35,6 +36,6 @@ export const publicRoutes = [
     {path: '/admin/phim', component: Phim, layout: TemplateAdmin},
     {path: '/admin/addnew', component: AddNew, layout: TemplateAdmin},
     {path: '/admin/edit/:id', component: Edit, layout: TemplateAdmin}, 
-    {path: '/admin/showtime', component: ShowTime, layout: TemplateAdmin},
+    {path: '/admin/showtime/:id', component: ShowTime, layout: TemplateAdmin},
 
 ]

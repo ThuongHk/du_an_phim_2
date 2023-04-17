@@ -2,7 +2,7 @@ import { Table, Input, Space } from 'antd';
 import { Fragment, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { callApiDeletePhim, layDanhSachFim } from '../../../redux/quanLyPhimSlice';
-import {EditOutlined, DeleteOutlined } from '@ant-design/icons'
+import {EditOutlined, DeleteOutlined,CalendarOutlined  } from '@ant-design/icons'
 import { history } from '../../../util/settings/config';
 import { NavLink } from 'react-router-dom';
 const { Search } = Input;
@@ -49,7 +49,9 @@ const columns = [
     render: (text,film,index) => ( 
       <Space size="middle">        
         <NavLink to={`/admin/edit/${film.maPhim}`} title="Edit" className='btn btn-outline-warning btn-sm'><EditOutlined /></NavLink>
-        <button title='Delete' className='btn btn-outline-danger btn-sm' onClick={()=>{ dispatch(callApiDeletePhim(film.maPhim))}}><DeleteOutlined /></button>        
+        <button title='Delete' className='btn btn-outline-danger btn-sm' onClick={()=>{ dispatch(callApiDeletePhim(film.maPhim))}}><DeleteOutlined /></button> 
+        <NavLink to={`/admin/showtime/${film.maPhim}`} title="Edit" className='btn btn-outline-success btn-sm'><CalendarOutlined /></NavLink>
+
       </Space>
     ),
   },
