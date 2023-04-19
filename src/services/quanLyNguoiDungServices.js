@@ -11,6 +11,9 @@ export class QuanLyNguoiDungServices extends BasicServices {
     layThongTinNguoiDung = () =>{
       return this.post(`api/QuanLyNguoiDung/ThongTinTaiKhoan`)
     }
+    dangKyNguoiDung = (formRegister) =>{
+      return this.post(`/api/QuanLyNguoiDung/DangKy`, formRegister)
+    }
 
 }
 

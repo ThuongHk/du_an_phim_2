@@ -2,6 +2,7 @@ import { useFormik } from 'formik'
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { userLogin } from '../../redux/quanLyNguoiDungSlice'
+import { NavLink } from 'react-router-dom'
 
 function Login() {
   const dispatch = useDispatch()
@@ -41,7 +42,7 @@ function Login() {
         <button type="submit" className="w-full px-8 py-3 font-semibold dark:bg-violet-400 dark:text-gray-900 bg-violet-400 rounded-full">Sign in</button>
       </div>
       <p className="px-6 text-sm text-center dark:text-gray-400">Bạn đã có tài khoản chưa?
-      <a rel="noopener noreferrer" href="#" className="hover:underline dark:text-violet-400">Đăng ký</a>.
+      <NavLink rel="noopener noreferrer" to='/register' className="hover:underline dark:text-violet-400">Đăng ký</NavLink>.
       </p>
     </div>
   </form>

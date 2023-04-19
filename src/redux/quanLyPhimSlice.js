@@ -99,6 +99,7 @@ export const callApiUpdatPhim = (formData) =>{  // update admin
   return async dispatch =>{
     try{
       const result = await quanLyFimServices.capNhatPhimUpload(formData)
+      alert('Cập nhật thành công!')
       console.log(result)
 
     }catch(err){

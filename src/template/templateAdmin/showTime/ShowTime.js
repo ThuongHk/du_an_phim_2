@@ -27,7 +27,7 @@ const formik = useFormik({
   onSubmit: async  (values) =>{
    try{
       const result = await quanLyDatVeServices.taoLichChieu(values)
-      alert('Thành công nhé')
+     console.log(result)
    }catch(err){
     console.log(err.response.data);
    }
@@ -72,7 +72,7 @@ formik.setFieldValue('giaVe', value)
   const layThongTinRap = async ()=> {    
       try{
         let result = await quanLyRapServices.layThongTinHeThongRap()
-        console.log(result)
+       
         setState({ 
           ...state,
           thongTinHeThongRap: result.data.content
@@ -116,7 +116,7 @@ formik.setFieldValue('giaVe', value)
     <InputNumber min={1} max={10} defaultValue={0} onChange={onChangeInputNumber} />
     </Form.Item>
    
-     <Button htmlType="submit">Tạo Lịch Chiếu</Button> 
+     <Button className='btn btn-outline-primary btn-sm' htmlType="submit">Tạo Lịch Chiếu</Button> 
     </Form>
 
     </div>

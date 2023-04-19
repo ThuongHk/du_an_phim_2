@@ -19,7 +19,7 @@ const items = [
     getItem(<NavLink to='/admin/phim'>Phim</NavLink>, '6'),
     getItem(<NavLink to='/admin/addnew'>Thêm Phim</NavLink>, '8')]),
   getItem('Files', '9', <FileOutlined />,[
-    getItem(<NavLink to='/admin/showtime'>ShowTime</NavLink>,'9')
+    // getItem(<NavLink to='/admin/showtime'>ShowTime</NavLink>,'9')
   ]),
 ];
 

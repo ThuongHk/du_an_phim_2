@@ -50,7 +50,7 @@ const columns = [
       <Space size="middle">        
         <NavLink to={`/admin/edit/${film.maPhim}`} title="Edit" className='btn btn-outline-warning btn-sm'><EditOutlined /></NavLink>
         <button title='Delete' className='btn btn-outline-danger btn-sm' onClick={()=>{ dispatch(callApiDeletePhim(film.maPhim))}}><DeleteOutlined /></button> 
-        <NavLink to={`/admin/showtime/${film.maPhim}`} title="Edit" className='btn btn-outline-success btn-sm'><CalendarOutlined /></NavLink>
+        <NavLink to={`/admin/showtime/${film.maPhim}`} title="Tạo lịch chiếu" className='btn btn-outline-success btn-sm'><CalendarOutlined /></NavLink>
 
       </Space>
     ),

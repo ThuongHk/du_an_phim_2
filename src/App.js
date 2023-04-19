@@ -46,8 +46,7 @@ function App() {
   return (
    <>
    <Loading />
-    <Routes>
-      
+    <Routes>     
       
       {publicRoutes.map((route,index)=>{       
         let Pages = route.component;        

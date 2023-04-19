@@ -6,7 +6,8 @@ import _ from 'lodash'
 
 
 const Header = () => {
-  const { userLogin } = useSelector(state => state.quanLyNguoiDungSlice)
+  // const { userLogin } = useSelector(state => state.quanLyNguoiDungSlice)
+  const userLogin = JSON.parse(localStorage.getItem(USER_LOGIN))
   const renderProfile = () => {
     if (_.isEmpty(userLogin)) {
       return <Fragment>

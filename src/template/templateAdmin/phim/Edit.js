@@ -25,7 +25,7 @@ const Edit = () => {
   const formikAddFilm = useFormik({
     enableReinitialize: true,
     initialValues: {
-      maPhim: formikAddFilm.maPhim,
+      // maPhim: formikAddFilm.maPhim,
       tenPhim: listPhimAdmin.tenPhim,
       trailer: listPhimAdmin.trailer,
       moTa: listPhimAdmin.moTa,

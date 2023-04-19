@@ -6,7 +6,7 @@ import styles from './Film_flip.module.scss'
 
 export default function film_flip({ item }) {
 
-
+console.log(item)
     return (       
         <div className={styles.flip_card}>
             <div className={styles.flip_card_inner}>
@@ -14,9 +14,9 @@ export default function film_flip({ item }) {
                     <img src={item.hinhAnh} alt={item.name} style={{ width: 300, height: 300 }} />
                 </div>
                 <div className={styles.flip_card_back}>
-                    <h1>John Doe</h1>
-                    <p>Architect &amp; Engineer</p>
-                    <p>We love that guy</p>
+                    <h1 className='h3'>{item.tenPhim}</h1>
+                    <p className='text-justify px-2'>{item.moTa}</p>
+                   
                 </div>
             </div>
             <div onClick={() => {
